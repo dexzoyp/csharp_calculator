@@ -22,11 +22,6 @@ namespace csharp_calculator
             InitializeComponent();
         }
 
-        private void Calculator_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void input_number(object sender, EventArgs e)
         {
             Button button = (Button)sender;

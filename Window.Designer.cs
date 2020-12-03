@@ -303,7 +303,6 @@ namespace csharp_calculator
             this.Name = "Window";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculator";
-            this.Click += new System.EventHandler(this.input_number);
             this.ResumeLayout(false);
             this.PerformLayout();
 

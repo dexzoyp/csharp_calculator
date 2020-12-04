@@ -110,6 +110,13 @@ namespace csharp_calculator
             {
                 active_box.Text = "Undefined.";
             }
+            else if(passive_box.Text.EndsWith("+") || passive_box.Text.EndsWith("-") ||
+                passive_box.Text.EndsWith("*") || passive_box.Text.EndsWith("/")
+                )
+            {
+                passive_box.Text = passive_box.Text.Substring(0, passive_box.Text.Length - 1);
+                calculate(passive_box.Text);
+            }
             else
             {
                 calculate(passive_box.Text);

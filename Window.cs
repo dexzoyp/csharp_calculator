@@ -106,7 +106,14 @@ namespace csharp_calculator
             }
             active_box.Clear();
 
-            calculate(passive_box.Text);
+            if (passive_box.Text.EndsWith("/0"))
+            {
+                active_box.Text = "Undefined.";
+            }
+            else
+            {
+                calculate(passive_box.Text);
+            }
         }
 
         private void input_clear(object sender, EventArgs e)
@@ -125,10 +132,10 @@ namespace csharp_calculator
         }
         private void calculate(string passiveBox)
         {
-            string value = new DataTable().Compute(passiveBox, null).ToString();
-            active_box.Text = value;
-            passive_box.Text = "";
-            isAnswer = true;
+                string value = new DataTable().Compute(passiveBox, null).ToString();
+                active_box.Text = value;
+                passive_box.Text = "";
+                isAnswer = true;
         }
 
         private void input_dot_operator(object sender, EventArgs e)
@@ -175,7 +182,10 @@ namespace csharp_calculator
 
         private void input_backspace(object sender, EventArgs e)
         {
-            active_box.Text = active_box.Text.Substring(0, active_box.Text.Length - 1);
+            if (active_box.Text != "")
+            {
+                active_box.Text = active_box.Text.Substring(0, active_box.Text.Length - 1);
+            }
         }
     }
 

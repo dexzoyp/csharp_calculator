@@ -51,6 +51,7 @@ namespace csharp_calculator
             this.button_clear = new System.Windows.Forms.Button();
             this.button_brackets = new System.Windows.Forms.Button();
             this.button_backspace = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // active_box
@@ -73,7 +74,7 @@ namespace csharp_calculator
             // 
             // button_0
             // 
-            this.button_0.Location = new System.Drawing.Point(66, 366);
+            this.button_0.Location = new System.Drawing.Point(66, 322);
             this.button_0.Name = "button_0";
             this.button_0.Size = new System.Drawing.Size(50, 50);
             this.button_0.TabIndex = 2;
@@ -83,7 +84,7 @@ namespace csharp_calculator
             // 
             // button_1
             // 
-            this.button_1.Location = new System.Drawing.Point(11, 310);
+            this.button_1.Location = new System.Drawing.Point(11, 266);
             this.button_1.Name = "button_1";
             this.button_1.Size = new System.Drawing.Size(50, 50);
             this.button_1.TabIndex = 3;
@@ -93,7 +94,7 @@ namespace csharp_calculator
             // 
             // button_2
             // 
-            this.button_2.Location = new System.Drawing.Point(66, 310);
+            this.button_2.Location = new System.Drawing.Point(66, 266);
             this.button_2.Name = "button_2";
             this.button_2.Size = new System.Drawing.Size(50, 50);
             this.button_2.TabIndex = 4;
@@ -103,7 +104,7 @@ namespace csharp_calculator
             // 
             // button_3
             // 
-            this.button_3.Location = new System.Drawing.Point(122, 310);
+            this.button_3.Location = new System.Drawing.Point(122, 266);
             this.button_3.Name = "button_3";
             this.button_3.Size = new System.Drawing.Size(50, 50);
             this.button_3.TabIndex = 5;
@@ -113,7 +114,7 @@ namespace csharp_calculator
             // 
             // button_4
             // 
-            this.button_4.Location = new System.Drawing.Point(11, 254);
+            this.button_4.Location = new System.Drawing.Point(11, 210);
             this.button_4.Name = "button_4";
             this.button_4.Size = new System.Drawing.Size(50, 50);
             this.button_4.TabIndex = 6;
@@ -123,7 +124,7 @@ namespace csharp_calculator
             // 
             // button_5
             // 
-            this.button_5.Location = new System.Drawing.Point(66, 254);
+            this.button_5.Location = new System.Drawing.Point(66, 210);
             this.button_5.Name = "button_5";
             this.button_5.Size = new System.Drawing.Size(50, 50);
             this.button_5.TabIndex = 7;
@@ -133,7 +134,7 @@ namespace csharp_calculator
             // 
             // button_6
             // 
-            this.button_6.Location = new System.Drawing.Point(122, 254);
+            this.button_6.Location = new System.Drawing.Point(122, 210);
             this.button_6.Name = "button_6";
             this.button_6.Size = new System.Drawing.Size(50, 50);
             this.button_6.TabIndex = 8;
@@ -143,7 +144,7 @@ namespace csharp_calculator
             // 
             // button_9
             // 
-            this.button_9.Location = new System.Drawing.Point(122, 198);
+            this.button_9.Location = new System.Drawing.Point(122, 154);
             this.button_9.Name = "button_9";
             this.button_9.Size = new System.Drawing.Size(50, 50);
             this.button_9.TabIndex = 11;
@@ -153,7 +154,7 @@ namespace csharp_calculator
             // 
             // button_8
             // 
-            this.button_8.Location = new System.Drawing.Point(66, 198);
+            this.button_8.Location = new System.Drawing.Point(66, 154);
             this.button_8.Name = "button_8";
             this.button_8.Size = new System.Drawing.Size(50, 50);
             this.button_8.TabIndex = 10;
@@ -163,7 +164,7 @@ namespace csharp_calculator
             // 
             // button_7
             // 
-            this.button_7.Location = new System.Drawing.Point(11, 198);
+            this.button_7.Location = new System.Drawing.Point(11, 154);
             this.button_7.Name = "button_7";
             this.button_7.Size = new System.Drawing.Size(50, 50);
             this.button_7.TabIndex = 9;
@@ -173,7 +174,7 @@ namespace csharp_calculator
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(122, 366);
+            this.button1.Location = new System.Drawing.Point(122, 322);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(50, 50);
             this.button1.TabIndex = 12;
@@ -183,7 +184,7 @@ namespace csharp_calculator
             // 
             // button_plus
             // 
-            this.button_plus.Location = new System.Drawing.Point(178, 310);
+            this.button_plus.Location = new System.Drawing.Point(178, 266);
             this.button_plus.Name = "button_plus";
             this.button_plus.Size = new System.Drawing.Size(65, 50);
             this.button_plus.TabIndex = 13;
@@ -193,7 +194,7 @@ namespace csharp_calculator
             // 
             // button_minus
             // 
-            this.button_minus.Location = new System.Drawing.Point(178, 254);
+            this.button_minus.Location = new System.Drawing.Point(178, 210);
             this.button_minus.Name = "button_minus";
             this.button_minus.Size = new System.Drawing.Size(65, 50);
             this.button_minus.TabIndex = 14;
@@ -203,7 +204,7 @@ namespace csharp_calculator
             // 
             // button_multiplication
             // 
-            this.button_multiplication.Location = new System.Drawing.Point(178, 198);
+            this.button_multiplication.Location = new System.Drawing.Point(178, 154);
             this.button_multiplication.Name = "button_multiplication";
             this.button_multiplication.Size = new System.Drawing.Size(65, 50);
             this.button_multiplication.TabIndex = 15;
@@ -213,7 +214,7 @@ namespace csharp_calculator
             // 
             // button_division
             // 
-            this.button_division.Location = new System.Drawing.Point(178, 142);
+            this.button_division.Location = new System.Drawing.Point(178, 98);
             this.button_division.Name = "button_division";
             this.button_division.Size = new System.Drawing.Size(65, 50);
             this.button_division.TabIndex = 16;
@@ -223,7 +224,7 @@ namespace csharp_calculator
             // 
             // button_equal
             // 
-            this.button_equal.Location = new System.Drawing.Point(178, 366);
+            this.button_equal.Location = new System.Drawing.Point(178, 322);
             this.button_equal.Name = "button_equal";
             this.button_equal.Size = new System.Drawing.Size(65, 50);
             this.button_equal.TabIndex = 17;
@@ -233,7 +234,7 @@ namespace csharp_calculator
             // 
             // button_changeSign
             // 
-            this.button_changeSign.Location = new System.Drawing.Point(11, 366);
+            this.button_changeSign.Location = new System.Drawing.Point(11, 322);
             this.button_changeSign.Name = "button_changeSign";
             this.button_changeSign.Size = new System.Drawing.Size(50, 50);
             this.button_changeSign.TabIndex = 18;
@@ -243,7 +244,7 @@ namespace csharp_calculator
             // 
             // button_clear
             // 
-            this.button_clear.Location = new System.Drawing.Point(66, 142);
+            this.button_clear.Location = new System.Drawing.Point(66, 98);
             this.button_clear.Name = "button_clear";
             this.button_clear.Size = new System.Drawing.Size(50, 50);
             this.button_clear.TabIndex = 19;
@@ -253,7 +254,7 @@ namespace csharp_calculator
             // 
             // button_brackets
             // 
-            this.button_brackets.Location = new System.Drawing.Point(122, 142);
+            this.button_brackets.Location = new System.Drawing.Point(122, 98);
             this.button_brackets.Name = "button_brackets";
             this.button_brackets.Size = new System.Drawing.Size(50, 50);
             this.button_brackets.TabIndex = 20;
@@ -263,7 +264,7 @@ namespace csharp_calculator
             // 
             // button_backspace
             // 
-            this.button_backspace.Location = new System.Drawing.Point(12, 142);
+            this.button_backspace.Location = new System.Drawing.Point(12, 98);
             this.button_backspace.Name = "button_backspace";
             this.button_backspace.Size = new System.Drawing.Size(50, 50);
             this.button_backspace.TabIndex = 21;
@@ -271,11 +272,23 @@ namespace csharp_calculator
             this.button_backspace.UseVisualStyleBackColor = true;
             this.button_backspace.Click += new System.EventHandler(this.input_backspace);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.Control;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(12, 375);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(127, 12);
+            this.label1.TabIndex = 22;
+            this.label1.Text = "Made by Tsvetelin Stoyanov";
+            // 
             // Window
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(262, 425);
+            this.ClientSize = new System.Drawing.Size(255, 392);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button_backspace);
             this.Controls.Add(this.button_brackets);
             this.Controls.Add(this.button_clear);
@@ -332,6 +345,7 @@ namespace csharp_calculator
         private System.Windows.Forms.Button button_clear;
         private System.Windows.Forms.Button button_brackets;
         private System.Windows.Forms.Button button_backspace;
+        private System.Windows.Forms.Label label1;
     }
 }
 
